@@ -16,7 +16,8 @@ div#root > header {
   height: 100%;
   padding: 20px 0px;
 }
-#main-nav a, #main-nav img {
+#main-nav a,
+#main-nav img {
   height: 100%;
 }
 #main-nav > ul {
@@ -33,6 +34,10 @@ div#root > header {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+#main-nav > ul > li > a:hover {
+  color: #f4ce14;
 }
 
 /**
@@ -110,7 +115,7 @@ div#root > header {
   text-align: left;
   font-size: 1.125rem;
   background-color: #edefee;
-  padding-bottom: 1.5rem; 
+  padding-bottom: 1.5rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
 }
@@ -139,7 +144,9 @@ div#root > header {
   font-weight: 700;
   text-decoration: none;
 }
-#special article header, #special article p, #special article a {
+#special article header,
+#special article p,
+#special article a {
   padding: 0 1.25rem;
 }
 #special article:hover {
@@ -177,8 +184,8 @@ div#root > header {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  
-  padding: 1.5rem; 
+
+  padding: 1.5rem;
   border-radius: 1rem;
 
   text-align: left;
@@ -206,7 +213,7 @@ div#root > header {
 }
 #story .container {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "header header"
     "information images";
   gap: 3rem;
@@ -270,4 +277,10 @@ div#root > footer strong {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0 0 0.5rem 0;
+}
+div#root > footer a {
+  transition: color 0.3s ease;
+}
+div#root > footer a:hover {
+  color: #f4ce14;
 }
