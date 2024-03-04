@@ -1,7 +1,8 @@
 import Header from './components/Header'
+import HeroSection from './components/HeroSection'
+import SpecialSection from './components/SpecialSection'
 
 import './App.css'
-import HeroSection from './components/HeroSection'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <main>
         <HeroSection />
+        <SpecialSection />
       </main>
     </>
   )
