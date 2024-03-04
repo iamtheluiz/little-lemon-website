@@ -79,7 +79,7 @@ div#root > header {
 }
 
 /**
-  * About
+  * Special
   */
 #special {
   display: flex;
@@ -100,6 +100,9 @@ div#root > header {
   gap: 2rem;
 }
 
+/**
+  * Special card
+  */
 #special article {
   display: flex;
   flex-direction: column;
@@ -142,4 +145,51 @@ div#root > header {
 #special article:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-0.5rem);
+}
+
+/**
+  * Testimonials
+  */
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: #4a5e58;
+}
+#testimonials h2 {
+  color: #fff;
+}
+#testimonials .container > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#testimonials .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+#testimonials article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+  padding: 1.5rem; 
+  border-radius: 1rem;
+
+  text-align: left;
+  font-size: 1.125rem;
+  background-color: #edefee;
+  transition: all 0.3s ease;
+}
+#testimonials article img {
+  border-radius: 50%;
+  width: 8rem;
+}
+#testimonials article p {
+  flex: 1;
 }

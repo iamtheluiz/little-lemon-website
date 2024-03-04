@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection'
 import SpecialSection from './components/SpecialSection'
 
 import './App.css'
+import TestimonialSection from './components/TestimonialSection'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <HeroSection />
         <SpecialSection />
+        <TestimonialSection />
       </main>
     </>
   )
