@@ -193,3 +193,53 @@ div#root > header {
 #testimonials article p {
   flex: 1;
 }
+
+/**
+  * Story
+  */
+#story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+#story .container {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "information images";
+  gap: 3rem;
+}
+#story .container > header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-bottom: 2rem; */
+}
+#story .information {
+  grid-area: information;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  font-size: 1.125rem;
+}
+#story .information h1 {
+  color: #f4ce14;
+}
+#story .information h2 {
+  margin-top: -1rem;
+}
+#story .images {
+  grid-area: images;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#story .images img {
+  border-radius: 1rem;
+  overflow: clip;
+  width: 100%;
+}

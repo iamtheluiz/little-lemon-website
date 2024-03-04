@@ -4,6 +4,7 @@ import SpecialSection from './components/SpecialSection'
 
 import './App.css'
 import TestimonialSection from './components/TestimonialSection'
+import StorySection from './components/StorySection'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <HeroSection />
         <SpecialSection />
         <TestimonialSection />
+        <StorySection />
       </main>
     </>
   )
