@@ -366,6 +366,11 @@ div#root > footer a {
 div#root > footer a:hover {
   color: #f4ce14;
 }
+div#root .socials ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 @media (max-width: 912px) {
   div#root > footer .container {
     flex-direction: column;

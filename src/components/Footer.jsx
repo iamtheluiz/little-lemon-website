@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import logo from '../assets/logo-white.png';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
 
 function Footer() {
   return (
@@ -44,7 +45,25 @@ function Footer() {
         </div>
         <div className="socials">
           <strong>Social Media</strong>
-
+          <nav>
+            <ul>
+              <li>
+                <a href="#!">
+                  <FaFacebook size={24} color="#fff" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <FaTwitter size={24} color="#fff" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <FaInstagram size={24} color="#fff" />
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
