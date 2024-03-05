@@ -13,11 +13,16 @@ body, #root {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
   font-family: 'Karla', sans-serif;
   color: #3e514a;
 }
+button, input, select, textarea {
+  font-family: 'Karla', sans-serif;
+}
 main {
   width: 100%;
+  flex: 1;
 }
 
 ul {

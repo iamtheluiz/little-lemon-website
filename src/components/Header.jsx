@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { FaBars, FaX } from "react-icons/fa6";
 
 import littleLemonLogo from '../assets/Logo.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [hamburger, setHamburger] = useState(false);
@@ -10,9 +11,9 @@ function Header() {
   return (
     <header className="container">
       <nav id="main-nav">
-        <a href="#!">
+        <Link to="/">
           <img src={littleLemonLogo} alt="Little Lemon" />
-        </a>
+        </Link>
 
         <button type="button" onClick={() => setHamburger(!hamburger)}>
           <FaBars size={32} color="#495e57" />
@@ -23,7 +24,7 @@ function Header() {
             <FaX size={24} color="#495e57" />
           </button>
           <li>
-            <a href="#!">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <a href="#!">About</a>
@@ -32,7 +33,7 @@ function Header() {
             <a href="#!">Menu</a>
           </li>
           <li>
-            <a href="#!">Reservations</a>
+            <Link to="/reservations">Reservations</Link>
           </li>
           <li>
             <a href="#!">Order online</a>
