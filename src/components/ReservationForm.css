@@ -50,6 +50,25 @@
 
   font-size: 1rem;
 }
+#reservation form .input-group input:invalid,
+#reservation form .input-group select:invalid {
+  border: 1px solid #ff0000;
+}
+#reservation form .input-group .error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #ff0000;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
 #reservation form button {
   width: 100%;
+}
+#reservation form button:disabled {
+  background-color: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+  border: 2px solid #e2e8f0;
 }
